@@ -62,7 +62,7 @@ bot.on('message', async message => {
             "gay": ["images/HiGay.jpg"]
         }
         if (dadResponses[msg]) {
-            message.channel.send(dadResponses[msg]);
+            msg === "gay" ? message.channel.send({ files: dadResponses[msg] }) : message.channel.send(dadResponses[msg]);
         } else {
             message.channel.send(`Hi ${msg2}, I'm Dad!`)
         }
