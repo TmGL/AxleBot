@@ -1,5 +1,7 @@
 module.exports = {
     name: "say",
+    category: 'Fun',
+    syntax: '/say [message]',
     description: "The bot will say what you tell it to",
     execute(message, args, bot) {
 

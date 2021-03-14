@@ -4,6 +4,8 @@ const fetch = require('node-fetch');
 module.exports = {
     name: "meme",
     description: "Lots of meme stuff.",
+    category: 'Images',
+    syntax: '/meme [valid field]',
     async execute(message, args) {
 
         if (args[1] == "blursed") {

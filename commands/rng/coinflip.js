@@ -3,6 +3,8 @@ const bot = new Discord.Client();
 
 module.exports = {
     name: "coinflip",
+    syntax: '/coinflip',
+    category: 'RNG',
     description: "Flips a coin.",
     execute(message, args) {
 

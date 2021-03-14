@@ -4,6 +4,8 @@ const bot = new Discord.Client();
 module.exports = {
     name: "quote",
     description: "Sends a random message from the server.",
+    category: 'Fun',
+    syntax: '/quote',
     execute(message, args) {
 
         message.channel.messages.fetch({

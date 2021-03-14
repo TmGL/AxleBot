@@ -5,3 +5,7 @@ npm-debug.log*
 
 # Config
 config.json
+things.js
+
+# Packages
+node_modules

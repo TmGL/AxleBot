@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: "pin",
+    syntaxt: '/pin',
+    category: 'Utility',
     description: "Pins a message lol.",
     execute(message, args) {
         //If the message author doesn't have permission to pin messages

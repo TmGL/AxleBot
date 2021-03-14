@@ -3,6 +3,8 @@ const Discord = require('discord.js');
 module.exports = {
     name: "ban",
     description: "Bans a specified user.",
+    category: 'Moderation',
+    syntax: '/ban [user]',
     execute(message, args) {
         const member = message.mentions.members.first();
         let reason = args.slice(2).join(" ");

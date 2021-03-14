@@ -3,6 +3,8 @@ const Discord = require('discord.js');
 module.exports = {
     name: "kick",
     description: "Kicks the user from the server.",
+    syntax: '/kick [user]',
+    category: 'Moderation',
     execute(message, args) {
         const member = message.mentions.members.first();
         let reason = args.slice(2).join(" ");

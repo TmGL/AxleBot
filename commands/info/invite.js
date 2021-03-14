@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: "invite",
+    syntax: '/invite',
+    category: 'Info',
     description: "Sends a link to invite Axle to your server.",
     execute(message, args) {
 

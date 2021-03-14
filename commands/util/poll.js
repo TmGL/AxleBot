@@ -3,6 +3,8 @@ const bot = new Discord.Client();
 
 module.exports = {
     name: "poll",
+    syntaxt: '/poll [question]',
+    category: 'Utility',
     description: "Creates a poll for users to vote on.",
     execute(message, args) {
 

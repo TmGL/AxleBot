@@ -3,6 +3,8 @@ const Discord = require('discord.js');
 module.exports = {
     name: "unban",
     description: "Unbans a specified user.",
+    syntax: '/unban [user]',
+    category: 'Moderation',
     execute(message, args) {
         let reason = args.slice(2).join(" ");
         const member1 = (args[1]).replace('<@','');

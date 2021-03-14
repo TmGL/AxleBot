@@ -4,6 +4,8 @@ const Canvas = require('canvas');
 
 module.exports = {
     name: "gd",
+    syntaxt: '/gd [valid field]',
+    category: 'Utility',
     description: "Does GD stuff.",
     async execute(message, args) {
 

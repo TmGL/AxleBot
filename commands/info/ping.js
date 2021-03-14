@@ -3,6 +3,8 @@ const Discord = require('discord.js');
 module.exports = {
     name: "ping",
     description: "Gives the bot latency.",
+    syntax: '/ping',
+    category: 'Utility',
     async execute(message, args, bot) {
 
         //Randomized responses to add humor

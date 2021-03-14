@@ -7,7 +7,6 @@ const {
     prefix,
     token,
     activity,
-    botinfo,
 } = require('./config/config.json');
 
 //Command handler
@@ -17,9 +16,10 @@ for (const folder of commandFolders) {
 	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
 	for (const file of commandFiles) {
 		const command = require(`./commands/${folder}/${file}`);
-		client.commands.set(command.name, command);
+		bot.commands.set(command.name, command);
 	}
 }
+
 //When the bot starts
 bot.once('ready', async () => {
     //Sets the bot's activity
@@ -96,6 +96,8 @@ bot.on('message', async message => {
     //Filter out bot messages or messages with no prefix
     if (message.author.bot || !message.content.startsWith(prefix)) return;
     
+    if (!command) return;
+
     // Execute command or catch the error
     try {
         command.execute(message, args, bot);

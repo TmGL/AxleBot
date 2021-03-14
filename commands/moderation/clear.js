@@ -3,8 +3,9 @@ const Discord = require('discord.js');
 module.exports = {
     name: "clear",
     description: "Bulk deletes messages.",
+    syntax: '/clear [number]',
+    category: 'Moderation',
     async execute(message, args) {
-
         if (!message.member.hasPermission('MANAGE_MESSAGES')){
             return message.reply("You don't have permission to manage messages!");
         }

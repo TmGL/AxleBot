@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: "card",
+    syntax: '/card',
+    category: 'RNG',
     description: "Draws a card.",
     execute(message, args) {
 

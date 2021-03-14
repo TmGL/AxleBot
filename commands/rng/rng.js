@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: "rng",
+    syntax: '/rng',
+    category: 'RNG',
     description: "Generates a random number.",
     execute(message, args) {
 

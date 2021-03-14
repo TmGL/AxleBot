@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
 
 module.exports = {
     name: "selfie",
     description: "Totally takes a selfie with your webcam.",
-    execute(message, args) {
+    category: 'Fun',
+    syntax: '/selfie',
+    execute(message) {
         //Tells you to look at your computer
         message.channel.send("Please look at your camera!");
 
@@ -33,7 +34,7 @@ module.exports = {
         setTimeout(function () {
             //Sends Selfie.jpg ("Uh oh stinky" orangutan)
             message.channel.send({
-                files: ["./images/Selfie.jpg"]
+                files: ["../images/Selfie.jpg"]
             });
         }, 17000);
     }
